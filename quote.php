@@ -2,5 +2,5 @@
 
 <span class="randomquote">
 	<p><q><?php echo htmlspecialchars( $quote_text ); ?></q></p><br /> 
-	<p>-- <cite><?php echo htmlspecialchars( $quote_author ); ?></cite></p> 
+	<p>&#8211; <cite><?php echo htmlspecialchars( $quote_author ); ?></cite></p> 
 </span>
