@@ -10,8 +10,8 @@
 
 class RandomQuotes extends Plugin
 {
-	const VERSION= '0.1';
-	const OPTION_NAME= 'randomquotes__filename';
+	const VERSION = '0.1';
+	const OPTION_NAME = 'randomquotes__filename';
 
 	/**
 	 * Returns information about this plugin
