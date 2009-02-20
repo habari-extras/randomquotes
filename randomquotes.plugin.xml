@@ -1,0 +1,9 @@
+<plugin>
+	<name>Random Quotes</name>
+	<url>http://habariproject.org/</url>
+	<author>Habari Community</author>
+	<authorurl>http://habariproject.org</authorurl>
+	<description>Outputs a random quote from XML files.</description>
+	<license>Apache License 2.0</license>
+</plugin>
+
