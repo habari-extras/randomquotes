@@ -14,6 +14,14 @@ class RandomQuotes extends Plugin
 	const OPTION_NAME = 'randomquotes__filename';
 
 	/**
+	 * Add help for the plugin admin
+	 **/
+	public function help()
+	{
+		return _t( 'To use, add the following to your theme: <code>&lt;?php $theme->randomquote(); ?&gt;</code>. See also the included quote.php file.' );
+	}
+
+	/**
 	 * Add update beacon support
 	 **/
 	public function action_update_check()
