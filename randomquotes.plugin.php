@@ -14,24 +14,6 @@ class RandomQuotes extends Plugin
 	const OPTION_NAME = 'randomquotes__filename';
 
 	/**
-	 * Returns information about this plugin
-	 *
-	 * @return array Plugin info array
-	 **/
-	public function info()
-	{
-		return array (
-			'name' => 'Random Quotes',
-			'url' => 'http://habariproject.org/',
-			'author' => 'Habari Community',
-			'authorurl' => 'http://habariproject.org',
-			'version' => self::VERSION,
-			'description' => 'Outputs a random quote from XML files.',
-			'license' => 'Apache License 2.0',
-		);
-	}
-
-	/**
 	 * Add update beacon support
 	 **/
 	public function action_update_check()
