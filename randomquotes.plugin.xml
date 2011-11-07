@@ -3,13 +3,13 @@
   <name>Random Quotes</name>
   <license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
   <url>http://habariproject.org/</url>
-  <author url="http://habariproject.org/">Habari Community</author>
-  <version>0.1</version>
+  <author url="http://habariproject.org/">The Habari Community</author>
+  <version>0.2</version>
   <description><![CDATA[Outputs a random quote from XML files.]]></description>
-  <copyright>2009</copyright>
+  <copyright>2011</copyright>
   <guid>9de12fcf-6c5c-43ad-8d94-c9eb398034e8</guid>
 	<help>
-		<value><![CDATA[<p>To use, add the following to your theme: <code>&lt;?php $theme->randomquote(); ?&gt;</code>. See also the included quote.php file.</p>]]></value>
+		<value><![CDATA[<p>To use, either create and place a Random Quote block, or add the following to your theme: <code>&lt;?php $theme->randomquote(); ?&gt;</code>. See also the included quote.php file.</p>]]></value>
 	</help>
 </pluggable>
  
