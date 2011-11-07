@@ -10,40 +10,21 @@
 
 class RandomQuotes extends Plugin
 {
-	const VERSION = '0.1';
 	const OPTION_NAME = 'randomquotes__filename';
-
-	/**
-	 * Add help for the plugin admin
-	 **/
-	public function help()
-	{
-		return _t( 'To use, add the following to your theme: <code>&lt;?php $theme->randomquote(); ?&gt;</code>. See also the included quote.php file.' );
-	}
-
-	/**
-	 * Add update beacon support
-	 **/
-	public function action_update_check()
-	{
-	 	Update::add( 'Random Quotes', '9de12fcf-6c5c-43ad-8d94-c9eb398034e8', $this->info->version );
-	}
 
 	/**
 	 * Outputs the options form on the plugin page.
 	 **/
 	public function action_plugin_ui( $plugin_id, $action )
 	{
-		if ( $plugin_id == $this->plugin_id() ) {
-			$form = new FormUI( 'randomquotes' );
-			$control = $form->append('select', 'control', self::OPTION_NAME, _t( 'Quotations file' ) );
-			foreach( $this->get_all_filenames() as $filename => $file ) {
-				$control->options[$filename] = $file->info->name . ": " . $file->info->description; 
-			}
-			$control->add_validator( 'validate_required' );
-			$form->append( 'submit', 'save', _t( 'Save' ) );
-			$form->out();
+		$form = new FormUI( 'randomquotes' );
+		$control = $form->append('select', 'control', self::OPTION_NAME, _t( 'Quotations file' ) );
+		foreach( $this->get_all_filenames() as $filename => $file ) {
+			$control->options[$filename] = $file->info->name . ": " . $file->info->description; 
 		}
+		$control->add_validator( 'validate_required' );
+		$form->append( 'submit', 'save', _t( 'Save' ) );
+		$form->out();
 	}
 
 	/**

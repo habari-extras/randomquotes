@@ -7,5 +7,9 @@
   <version>0.1</version>
   <description><![CDATA[Outputs a random quote from XML files.]]></description>
   <copyright>2009</copyright>
+  <guid>9de12fcf-6c5c-43ad-8d94-c9eb398034e8</guid>
+	<help>
+		<value><![CDATA[<p>To use, add the following to your theme: <code>&lt;?php $theme->randomquote(); ?&gt;</code>. See also the included quote.php file.</p>]]></value>
+	</help>
 </pluggable>
  
