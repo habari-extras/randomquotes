@@ -99,7 +99,7 @@ class RandomQuotes extends Plugin
 	 **/
 	public function action_block_content_randomquote( $block, $theme )
 	{
-		$filename = $block->filename;
+		$filename = ( isset( $block->filename ) ? $block->filename : 'habari' );
 		$file = simplexml_load_file ( $this->get_path() . "/files/$filename.xml" );
 		$whichone = rand(0,count($file->quote)-1);
 		$block->quote_text = (string) $file->quote[$whichone];
